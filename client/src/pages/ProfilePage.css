@@ -1,0 +1,57 @@
+/* Add styles for storage section */
+.storage-section {
+  margin-top: var(--spacing-xl);
+}
+
+.storage-info {
+  margin-top: var(--spacing-md);
+}
+
+.storage-usage {
+  margin-bottom: var(--spacing-md);
+}
+
+.storage-progress-bar {
+  height: 8px;
+  background-color: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--spacing-sm);
+}
+
+.storage-progress-fill {
+  height: 100%;
+  background-color: var(--accent-blue);
+}
+
+.storage-text {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.storage-upgrade {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--accent-amber);
+}
+
+.storage-upgrade p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.upgrade-button-small {
+  background-color: var(--accent-blue);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  display: inline-block;
+}
+
+.upgrade-button-small:hover {
+  background-color: rgba(58, 134, 255, 0.8);
+  text-decoration: none;
+} 

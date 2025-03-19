@@ -1,0 +1,159 @@
+.note-creator {
+  margin-bottom: var(--spacing-lg);
+}
+
+.create-note-button {
+  background-color: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.create-note-button:hover {
+  background-color: rgba(58, 134, 255, 0.8);
+}
+
+.note-form {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.note-title-input, .note-content-input {
+  background-color: var(--bg-tertiary);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-md);
+}
+
+.note-title-input::placeholder, .note-content-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.note-title-input:focus, .note-content-input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.note-form-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.importance-selector {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.importance-selector label {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.importance-selector select {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.tags-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+}
+
+.tags-input-container label {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.tags-input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs);
+  min-height: 36px;
+  align-items: center;
+}
+
+.tag-pill {
+  display: flex;
+  align-items: center;
+  background-color: rgba(58, 134, 255, 0.2);
+  color: var(--accent-blue);
+  font-size: var(--font-size-sm);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: var(--accent-blue);
+  cursor: pointer;
+  margin-left: 4px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag-input {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  flex: 1;
+  min-width: 60px;
+  padding: var(--spacing-xs);
+}
+
+.tag-input:focus {
+  outline: none;
+}
+
+.note-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+}
+
+.cancel-button, .save-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+}
+
+.save-button {
+  background-color: var(--accent-blue);
+  border: none;
+  color: white;
+}
+
+.save-button:disabled {
+  background-color: rgba(58, 134, 255, 0.4);
+  cursor: not-allowed;
+} 

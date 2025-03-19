@@ -1,0 +1,110 @@
+.notes-timeline {
+  padding: var(--spacing-lg);
+}
+
+.date-group {
+  margin-bottom: var(--spacing-xl);
+}
+
+.timeline-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.date-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  margin-right: var(--spacing-md);
+}
+
+.date-label {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.note-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.note-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.note-content {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.note-tag {
+  font-size: var(--font-size-sm);
+  color: var(--accent-blue);
+}
+
+.note-source {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.source-label {
+  color: var(--text-primary);
+}
+
+.blue-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-blue);
+  border-radius: 50%;
+  position: absolute;
+  right: var(--spacing-md);
+  top: var(--spacing-md);
+}
+
+.empty-notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.empty-notes-icon {
+  font-size: 48px;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.empty-notes h2 {
+  font-size: var(--font-size-xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.empty-notes p {
+  color: var(--text-secondary);
+} 

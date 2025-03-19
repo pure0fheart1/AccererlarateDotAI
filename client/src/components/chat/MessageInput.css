@@ -1,0 +1,83 @@
+.message-input-container {
+  padding: var(--spacing-md);
+  background-color: var(--bg-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.message-form {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.message-input {
+  flex: 1;
+  padding: var(--spacing-md);
+  background-color: var(--bg-secondary);
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-md);
+}
+
+.message-input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.message-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.send-button {
+  background-color: var(--accent-blue);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.send-button:hover:not(:disabled) {
+  background-color: rgba(58, 134, 255, 0.8);
+}
+
+.send-button:disabled {
+  background-color: rgba(58, 134, 255, 0.4);
+  cursor: not-allowed;
+}
+
+.send-icon {
+  font-size: 16px;
+}
+
+/* Add new styles for attachments */
+.message-actions {
+  display: flex;
+  padding: var(--spacing-sm) 0;
+}
+
+.attachment-button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  border-radius: 50%;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attachment-button:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.attachment-icon {
+  font-size: 18px;
+} 

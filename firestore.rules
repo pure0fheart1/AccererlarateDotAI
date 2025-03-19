@@ -1,0 +1,15 @@
+match /subscriptions/{subscriptionId} {
+  // Users can read their own subscription
+  allow read: if request.auth != null && request.auth.uid == subscriptionId;
+  
+  // Only allow write from server-side functions or admin
+  allow write: if false; // Restrict client-side writes, use Cloud Functions
+}
+
+match /plans/{planId} {
+  // All authenticated users can read plan information
+  allow read: if request.auth != null;
+  
+  // Only admins can create/update plans
+  allow write: if false;
+} 

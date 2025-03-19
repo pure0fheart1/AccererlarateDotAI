@@ -1,0 +1,69 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: background-color var(--transition-normal);
+}
+
+.page-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+}
+
+/* Animation for loading state */
+.loading::after {
+  content: '.';
+  animation: loading-dots 1.5s infinite;
+  width: 1em;
+  display: inline-block;
+  text-align: left;
+}
+
+@keyframes loading-dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+.chat-page {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure all interactive elements have proper transitions */
+button, input, textarea, select, a {
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+}
+
+/* Loading screen */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color var(--transition-normal);
+} 

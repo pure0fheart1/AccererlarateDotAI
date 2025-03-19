@@ -1,0 +1,237 @@
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color var(--transition-normal);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.pricing-header p {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pricing-plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  justify-content: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.plan-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color var(--transition-normal);
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.popular-plan {
+  border: 2px solid var(--accent-blue);
+  transform: scale(1.05);
+}
+
+.popular-plan:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-blue);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.plan-name {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.plan-price {
+  margin-bottom: var(--spacing-md);
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.period {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-left: var(--spacing-xs);
+}
+
+.plan-description {
+  color: var(--text-secondary);
+  font-size: var(--font-size-md);
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-xl) 0;
+  flex-grow: 1;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-md);
+}
+
+.feature-icon {
+  color: var(--accent-green);
+  margin-right: var(--spacing-sm);
+  font-weight: bold;
+}
+
+.plan-footer {
+  text-align: center;
+}
+
+.plan-button {
+  display: inline-block;
+  width: 100%;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  border: none;
+}
+
+.plan-button.primary {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+.plan-button.primary:hover:not(:disabled) {
+  background-color: rgba(58, 134, 255, 0.8);
+}
+
+.plan-button.primary:disabled {
+  background-color: rgba(58, 134, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.plan-button.secondary {
+  background-color: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--text-primary);
+}
+
+.plan-button.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.pricing-error {
+  background-color: rgba(255, 82, 82, 0.1);
+  color: #ff5252;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.pricing-faq {
+  margin-top: var(--spacing-xl);
+  max-width: 800px;
+  align-self: center;
+  width: 100%;
+}
+
+.pricing-faq h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-xl);
+}
+
+.faq-item {
+  margin-bottom: var(--spacing-lg);
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-normal);
+}
+
+.faq-item h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-lg);
+}
+
+.faq-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.pricing-cta {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.back-link {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  font-size: var(--font-size-md);
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .pricing-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plan-card, .popular-plan {
+    transform: none;
+    max-width: 100%;
+  }
+  
+  .plan-card:hover, .popular-plan:hover {
+    transform: translateY(-5px);
+  }
+} 
